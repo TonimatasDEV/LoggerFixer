@@ -1,35 +1,35 @@
 modLoader = "javafml"
 loaderVersion = "${loaderVersionRange}"
 license = "MIT"
-issueTrackerURL="https://github.com/TonimatasDEV/RecipeFixer/issues"
+issueTrackerURL="https://github.com/TonimatasDEV/LoggerFixer/issues"
 
 [[mods]]
-modId = "recipefixer"
+modId = "loggerfixer"
 version = "${modVersion}"
-displayName = "Recipe Fixer"
-updateJSONURL="https://api.modrinth.com/updates/recipe-fixer/forge_updates.json"
-displayURL="https://github.com/TonimatasDEV/RecipeFixer"
-credits="Mysticpasta1 - Founder and primary developer | TonimatasDEV - Publisher"
-authors = "Mysticpasta1, TonimatasDEV"
+displayName = "Logger Fixer"
+updateJSONURL="https://api.modrinth.com/updates/logger.fixer/forge_updates.json"
+displayURL="https://github.com/TonimatasDEV/LoggerFixer"
+credits="TonimatasDEV - Developer"
+authors = "TonimatasDEV"
 
 description = '''
-Simple mod to
+Why we need these logs?
 '''
 
 [[mixins]]
-config = "recipefixer.mixins.json"
+config = "loggerfixer.mixins.json"
 
 #[[accessTransformers]]
 #file="META-INF/accesstransformer.cfg"
 
-[[dependencies.recipefixer]]
+[[dependencies.loggerfixer]]
 modId = "neoforge"
 type = "required"
 versionRange = "${neoVersionRange}"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.recipefixer]]
+[[dependencies.loggerfixer]]
 modId = "minecraft"
 type = "required"
 versionRange = "${minecraftVersionRange}"

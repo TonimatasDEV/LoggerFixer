@@ -1,0 +1,39 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.tonimatas.loggerfixer.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "forge.AnimationLoaderMixin",
+    "forge.ConfigTrackerMixin",
+    "forge.ModConfigSpecMixin",
+    "forge.NeoForgeModMixin",
+    "forge.VersionChecker1Mixin",
+    "minecraft.ReloadableResourceManagerMixin",
+    "minecraft.UtilMixin",
+    "minecraft.VanillaPackResourcesBuilderMixin",
+    "mojang.YggdrasilAuthenticationServiceMixin"
+  ],
+  "client": [
+    "minecraft.MainMixin",
+    "minecraft.MinecraftMixin",
+    "minecraft.ModelBakeryMixin",
+    "minecraft.ShaderInstanceMixin",
+    "minecraft.SingleFileMixin",
+    "minecraft.SoundEngineMixin",
+    "minecraft.SoundManagerMixin",
+    "minecraft.SpriteContentsMixin",
+    "minecraft.SpriteLoaderMixin",
+    "minecraft.TextureAtlasMixin",
+    "minecraft.UnihexProviderMixin",
+    "mojang.LibraryMixin"
+  ],
+  "server": [
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
