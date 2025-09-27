@@ -1,0 +1,40 @@
+modLoader = "javafml"
+loaderVersion = "${loaderVersionRange}"
+license = "MIT"
+issueTrackerURL="https://github.com/TonimatasDEV/RecipeFixer/issues"
+
+[[mods]]
+modId = "recipefixer"
+version = "${modVersion}"
+displayName = "Recipe Fixer"
+updateJSONURL="https://api.modrinth.com/updates/recipe-fixer/forge_updates.json"
+displayURL="https://github.com/TonimatasDEV/RecipeFixer"
+credits="Mysticpasta1 - Founder and primary developer | TonimatasDEV - Publisher"
+authors = "Mysticpasta1, TonimatasDEV"
+
+description = '''
+Simple mod to
+'''
+
+[[mixins]]
+config = "recipefixer.mixins.json"
+
+#[[accessTransformers]]
+#file="META-INF/accesstransformer.cfg"
+
+[[dependencies.recipefixer]]
+modId = "neoforge"
+type = "required"
+versionRange = "${neoVersionRange}"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.recipefixer]]
+modId = "minecraft"
+type = "required"
+versionRange = "${minecraftVersionRange}"
+ordering = "NONE"
+side = "BOTH"
+
+#[features.recipefixer]
+#openGLVersion="[3.2,)"
