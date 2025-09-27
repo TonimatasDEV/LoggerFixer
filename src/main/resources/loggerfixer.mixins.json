@@ -6,12 +6,15 @@
   "mixins": [
     "forge.AnimationLoaderMixin",
     "forge.ConfigTrackerMixin",
+    "forge.GameTestHooksMixin",
     "forge.ModConfigSpecMixin",
     "forge.NeoForgeModMixin",
     "forge.VersionChecker1Mixin",
+    "minecraft.CommandsMixin",
     "minecraft.ReloadableResourceManagerMixin",
     "minecraft.UtilMixin",
     "minecraft.VanillaPackResourcesBuilderMixin",
+    "mojang.DataFixerBuilder1Mixin",
     "mojang.YggdrasilAuthenticationServiceMixin"
   ],
   "client": [
